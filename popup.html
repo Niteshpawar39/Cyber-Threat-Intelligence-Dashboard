@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tracker Blocker</title>
+    <style>
+      body { font-family: Arial, sans-serif; min-width: 200px; }
+      #blockedCount { font-size: 24px; margin: 10px; }
+      #toggle { margin-top: 10px; }
+    </style>
+  </head>
+  <body>
+    <div>Blocked on this tab:</div>
+    <div id="blockedCount">0</div>
+    <button id="toggle">Toggle Blocking</button>
+    <div>
+      <h4>Whitelist / Blacklist</h4>
+      <input id="domainInput" placeholder="domain.com" />
+      <button id="addWhitelist">Whitelist</button>
+      <button id="addBlacklist">Blacklist</button>
+      <ul id="whitelist"></ul>
+      <ul id="blacklist"></ul>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
+

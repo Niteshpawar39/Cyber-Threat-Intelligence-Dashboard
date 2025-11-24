@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CTI Dashboard</title>
+</head>
+<body>
+  <h1>Threat Intelligence Dashboard</h1>
+  <p>Total IOCs collected: {{ total_iocs }}</p>
+
+  <form action="/lookup" method="get">
+    <input type="text" name="ioc" placeholder="Enter IP / Domain / Hash" required/>
+    <button type="submit">Lookup</button>
+  </form>
+
+  <p><a href="/export">Export all IOCs (JSON)</a></p>
+</body>
+</html>
+
